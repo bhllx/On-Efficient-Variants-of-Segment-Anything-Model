@@ -5,12 +5,9 @@ The Segment Anything Model (SAM) is a foundational model for image segmentation 
 
 ![image](https://github.com/user-attachments/assets/025e0687-a66c-4a90-a9a2-a0c0b667423a)
 
-
-## Content
-
 ## Efficient SAM Variants
 ### Accelerating SegAny
-Segment Anything (SegAny), i.e. the promptable segmentation task, is the **foundation task of SAM**, whose goal is to return a valid mask with any given prompt (e.g. a point, a box, a mask, and text). 
+Segment Anything (SegAny), i.e. the promptable segmentation task, is the **foundation task of [SAM](https://arxiv.org/abs/2304.02643)**, whose goal is to return a valid mask with any given prompt (e.g. a point, a box, a mask, and text). 
 
 Variants below focus on accelerating SegAny: 
 
