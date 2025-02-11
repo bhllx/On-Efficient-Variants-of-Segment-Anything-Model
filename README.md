@@ -12,7 +12,7 @@ Segment Anything (SegAny), i.e. the promptable segmentation task, is the **found
 
 Variants below focus on accelerating SegAny: 
 
-| Model | Paper | Code | Key Features |
+| Model | Paper | Code | Description |
 |:---:|:---:|:---:|:---:|
 |FastSAM|[arXiv](https://arxiv.org/abs/2306.12156)|[Github](https://github.com/CASIA-IVA-Lab/FastSAM)|Reformulate SAM’s pipeline with YOLOv8-Seg for SegEvery and the later prompts-guided selection for SegAny.|
 |SqueezeSAM|[arXiv](https://arxiv.org/abs/2312.06736)||Substitute SAM’s architecture with UNet-based encoder-decoder.|
