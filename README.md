@@ -40,7 +40,7 @@ Segment Everything (SegEvery), i.e. the all-masks generation task, is an extensi
 
 Variants below focus on accelerating SegEvery: 
 
-| Model | Paper | Code | Key Features |
+| Model | Paper | Code | Description |
 |:---:|:---:|:---:|:-------------:|
 |FastSAM|[arXiv](https://arxiv.org/abs/2306.12156)|[Github](https://github.com/CASIA-IVA-Lab/FastSAM)|Directly leverage YOLOv8-Seg to segment everything in high efficiency.|
 |MobileSAMV2||[Github](https://github.com/ChaoningZhang/MobileSAM)|Object-aware prompt sampling based on the external YOLOv8 detector.|
@@ -49,6 +49,16 @@ Variants below focus on accelerating SegEvery:
 |AoP-SAM|[OpenReview](https://openreview.net/forum?id=mrs7Z7eoyT)||Generate prompts iteratively by coarse prediction and fine-grained filtering.|
 
 **Note**: Variants like FastSAM and TinySAM propose efficient strategies for both tasks, so we put them in both lists.
+
+## Efficient SAM 2 Variants
+[Segment Anything Model 2](https://arxiv.org/abs/2408.00714), successor of Segment Anything Model, which not only achieves higher accuracy and efficiency on image segmentation task but also extends its powerful capability into video segmentation tasks, has also suffered inefficiency issues.
+Up till now, several works fousing on efficient SAM 2 have emerged. 
+We organize them in following list.
+| Model | Paper | Code | Description |
+|:---:|:---:|:---:|:-------------:|
+|EfficientTAM|[arXiv](https://arxiv.org/abs/2411.18933)|[Github](https://github.com/yformer/EfficientTAM)|Leverage SAMI-pretrained lightweight ViT as image encoder propose an efficient memory cross-attention to further improve the efficiency.|
+|EdgeTAM|[arXiv](https://arxiv.org/abs/2501.07256)||Substitue backbone with RepViT and leverage a global Perciever and a novel 2D Spatial Perceiver to compress memories.|
+|Surgical SAM 2|[arXiv](https://arxiv.org/abs/2408.07931)|[Github](https://github.com/jinlab-imvr/Surgical-SAM-2)|Efficient frame pruning strategy to only retain the most informative frames.|
 
 ## Citation
 ```
